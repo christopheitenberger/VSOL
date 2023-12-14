@@ -1,0 +1,28 @@
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+\multicolumn{1}{p{2.5cm}}{Short Algorithm Name Differences} & \multicolumn{2}{p{1.7cm}}{Compression Ratio} & \multicolumn{2}{p{1.7cm}}{Mean Diff to Lossless Last Accuracy} & \multicolumn{2}{p{1.7cm}}{Compression Time} & \multicolumn{2}{p{1.7cm}}{Compression Time Max} & \multicolumn{2}{p{1.7cm}}{Decompression Time} \\
+ & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM \\
+\midrule
+BL-LosslessCompr & 1.000 & 1.000 & 0.000 & 0.000 & 0.030 & 0.037 & 0.063 & 0.079 & 0.262 & 0.434 \\
+Flors20r32rSkisg0pFeTfSplbs & 7.706 & 9.425 & \bfseries 0.290 & \bfseries 0.030 & 0.193 & 0.424 & 0.277 & 1.775 & 0.297 & 0.959 \\
+Topk7.5p0.1m*0.5lSkisg0pFeTf & 5.491 & 7.482 & 0.170 & -0.050 & 0.189 & 0.383 & 0.271 & 1.669 & 0.141 & 0.530 \\
+Topk7.5p0.1m*0.5lFlors18r32rSkisg0pFeTf & 9.870 & 13.143 & 0.080 & -0.080 & 0.167 & \bfseries 0.321 & 0.264 & 1.517 & 0.082 & \bfseries 0.247 \\
+Topk7.5p0.1mTlSkisg0pFeTf & 6.378 & 8.226 & 0.050 & -0.080 & 0.194 & 0.398 & 0.276 & 1.746 & 0.152 & 0.508 \\
+Topk7.5p0.1mTlFlors18r32rSkisg0pFeTf & 10.327 & 13.694 & 0.010 & -0.110 & 0.171 & 0.326 & \bfseries 0.241 & 1.493 & 0.085 & 0.254 \\
+Flors20r32rSkisg1.0pFeTfSplbs & 19.801 & 14.435 & -0.080 & -0.050 & 0.295 & 0.453 & 0.680 & 1.781 & 0.368 & 0.903 \\
+Topk7.5p0.1m*0.5lSkisg1.0pFeTf & 12.984 & 10.362 & -0.240 & -0.100 & 0.310 & 0.423 & 0.913 & 1.673 & 0.223 & 0.653 \\
+Topk7.5p0.1m*0.5lFlors18r32rSkisg1.0pFeTf & 27.239 & 21.080 & -0.280 & -0.110 & 0.256 & 0.355 & 0.575 & \bfseries 1.463 & 0.156 & 0.290 \\
+Topk5.0p0.1m2lSkisg0pFeTf & 9.180 & 13.335 & -0.300 & -0.440 & 0.189 & 0.395 & 0.274 & 1.730 & 0.123 & 0.617 \\
+Topk5.0p0.1m2lFlors18r32rSkisg0pFeTf & 11.797 & 19.407 & -0.310 & -0.420 & \bfseries 0.164 & 0.331 & 0.369 & 1.528 & \bfseries 0.072 & 0.285 \\
+Topk7.5p0.1mTlSkisg1.0pFeTf & 14.770 & 11.696 & -0.330 & -0.180 & 0.331 & 0.443 & 0.952 & 1.763 & 0.278 & 0.586 \\
+Topk7.5p0.1m*0.5lFlors20r32rSkisg0pFeTf & 13.745 & 18.328 & -0.400 & -0.260 & 0.200 & 0.459 & 0.318 & 1.783 & 0.122 & 0.514 \\
+Topk7.5p0.1mTlFlors18r32rSkisg1.0pFeTf & 28.576 & 23.496 & -0.460 & -0.130 & 0.247 & 0.367 & 0.503 & 1.498 & 0.138 & 0.320 \\
+Topk7.5p0.1mTlFlors20r32rSkisg0pFeTf & 14.013 & 18.580 & -0.560 & -0.300 & 0.208 & 0.475 & 0.297 & 1.821 & 0.123 & 0.594 \\
+Topk5.0p0.1m2lSkisg1.0pFeTf & 21.994 & 20.171 & -0.740 & -0.550 & 0.319 & 0.455 & 0.729 & 1.715 & 0.231 & 0.530 \\
+Topk5.0p0.1m2lFlors18r32rSkisg1.0pFeTf & 31.860 & 32.906 & -0.760 & -0.570 & 0.233 & 0.380 & 0.477 & 1.511 & 0.138 & 0.263 \\
+Topk7.5p0.1m*0.5lFlors20r32rSkisg1.0pFeTf & 34.729 & 34.610 & -0.850 & -0.360 & 0.331 & 0.508 & 0.709 & 2.077 & 0.217 & 0.583 \\
+Topk7.5p0.1mTlFlors20r32rSkisg1.0pFeTf & 35.867 & 35.425 & -1.120 & -0.410 & 0.354 & 0.537 & 0.743 & 1.822 & 0.213 & 0.542 \\
+Topk5.0p0.1m2lFlors20r32rSkisg0pFeTf & 15.770 & 22.065 & -1.120 & -0.760 & 0.204 & 0.495 & 0.425 & 1.825 & 0.121 & 0.534 \\
+Topk5.0p0.1m2lFlors20r32rSkisg1.0pFeTf & \bfseries 38.085 & \bfseries 39.735 & -1.650 & -0.930 & 0.317 & 0.559 & 0.619 & 1.840 & 0.157 & 0.441 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,20 @@
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+\multicolumn{1}{p{2.5cm}}{Short Algorithm Name Differences} & \multicolumn{2}{p{1.8cm}}{Compression Ratio} & \multicolumn{2}{p{1.8cm}}{Mean Diff to Lossless Last Accuracy} & \multicolumn{2}{p{1.8cm}}{Compression Time} & \multicolumn{2}{p{1.8cm}}{Compression Time Max} & \multicolumn{2}{p{1.8cm}}{Decompression Time} & \multicolumn{2}{p{1.8cm}}{Decompression Time Max} \\
+ & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM \\
+\midrule
+BL-LosslessCompr & 1.000 & 1.000 & 0.000 & 0.000 & 0.030 & 0.037 & 0.063 & 0.079 & 0.262 & 0.434 & 0.530 & 0.875 \\
+Topk25.0p & 1.147 & 2.001 & 0.210 & \bfseries 0.010 & 0.070 & 0.287 & 0.117 & 0.373 & 0.306 & 1.175 & 0.614 & 2.413 \\
+Topk15.0p & 1.355 & 2.658 & \bfseries 0.220 & -0.010 & 0.066 & 0.274 & 0.115 & 0.360 & 0.302 & 1.169 & 0.603 & 2.377 \\
+Topk10.0p & 1.626 & 3.348 & 0.170 & -0.050 & 0.063 & 0.263 & 0.096 & 0.349 & 0.296 & 1.156 & 0.607 & 2.349 \\
+Topk7.5p & 1.855 & 3.949 & 0.160 & -0.100 & 0.062 & 0.258 & 0.101 & 0.341 & 0.299 & 1.157 & 0.612 & 2.344 \\
+Topk5.0p & 2.241 & 4.976 & 0.060 & -0.250 & 0.059 & 0.252 & 0.093 & 0.334 & 0.289 & 1.137 & 0.582 & 2.252 \\
+Topk2.5p & 3.111 & 7.218 & -0.350 & -0.710 & 0.054 & 0.240 & 0.090 & 0.341 & 0.283 & 1.131 & 0.562 & 2.315 \\
+Topk1.75p & 3.627 & 8.545 & -0.670 & -1.170 & 0.053 & 0.235 & 0.086 & 0.311 & 0.280 & 1.111 & 0.577 & 2.286 \\
+Topk1.0p & 4.486 & 10.698 & -1.420 & -2.180 & 0.051 & 0.230 & 0.086 & 0.311 & 0.275 & 1.117 & 0.541 & 2.278 \\
+Topk0.5p & 5.449 & 13.096 & -2.990 & -4.700 & 0.049 & 0.226 & 0.089 & 0.305 & 0.268 & 1.083 & 0.548 & 2.196 \\
+Topk0.25p & 6.155 & 14.910 & -5.650 & -8.830 & 0.049 & 0.220 & 0.084 & 0.299 & 0.264 & 1.088 & 0.536 & 2.173 \\
+Topk0.1p & 6.725 & 16.429 & -11.900 & -16.010 & 0.047 & \bfseries 0.215 & 0.089 & \bfseries 0.294 & \bfseries 0.262 & 1.064 & \bfseries 0.526 & 2.142 \\
+Topk0.01p & \bfseries 7.220 & \bfseries 17.740 & -27.890 & -24.380 & \bfseries 0.047 & 0.215 & \bfseries 0.082 & 0.334 & 0.265 & \bfseries 1.059 & 0.566 & \bfseries 2.123 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,20 @@
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+\multicolumn{1}{p{2.5cm}}{Short Algorithm Name Differences} & \multicolumn{2}{p{1.7cm}}{Compression Ratio} & \multicolumn{2}{p{1.7cm}}{Mean Diff to Lossless Last Accuracy} & \multicolumn{2}{p{1.7cm}}{Compression Time} & \multicolumn{2}{p{1.7cm}}{Compression Time Max} & \multicolumn{2}{p{1.7cm}}{Decompression Time} \\
+ & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM \\
+\midrule
+BL-GeneralCompr & 1.000 & 1.000 & 0.000 & 0.000 & 0.012 & 0.024 & 0.035 & 0.043 & 0.011 & 0.024 \\
+Flors20rSkisg0pFeTfDifrs28f & 28.523 & 14.208 & \bfseries 0.190 & \bfseries 0.010 & 0.193 & 0.424 & 0.277 & 1.775 & 0.297 & 0.959 \\
+Flors20rSkisg0pFeTfDifrs148f & 46.197 & 21.856 & 0.130 & -0.030 & 0.159 & 0.274 & 0.483 & 1.435 & 1.081 & 4.323 \\
+Flors20rDifrs148f & 29.944 & 18.017 & -0.020 & -0.030 & \bfseries 0.028 & 0.085 & \bfseries 0.046 & 0.120 & 0.931 & 2.476 \\
+Flors20rDifrs28f & 17.275 & 12.528 & -0.080 & 0.000 & 0.046 & \bfseries 0.048 & 0.085 & \bfseries 0.085 & 0.255 & 0.392 \\
+Topk7.5p0.1mTlFlors18rDifrs148f & 46.405 & 32.109 & -0.080 & -0.120 & 0.037 & 0.123 & 0.058 & 0.152 & 0.311 & 1.103 \\
+Topk7.5p0.1mTlFlors18rDifrs28f & 21.704 & 17.981 & -0.100 & -0.100 & 0.036 & 0.098 & 0.059 & 0.135 & \bfseries 0.068 & \bfseries 0.176 \\
+Flors20rSkisg1.0pFeTfDifrs28f & 73.293 & 21.762 & -0.180 & -0.070 & 0.295 & 0.453 & 0.680 & 1.781 & 0.368 & 0.903 \\
+Flors20rSkisg1.0pFeTfDifrs148f & 82.877 & 29.074 & -0.260 & -0.100 & 0.236 & 0.297 & 0.473 & 1.387 & 0.458 & 2.516 \\
+Topk7.5p0.1m*0.5lFlors20rDifrs28f & 24.685 & 21.684 & -0.460 & -0.260 & 0.060 & 0.254 & 0.092 & 0.310 & 0.112 & 0.492 \\
+Topk7.5p0.1m*0.5lFlors20rDifrs148f & 62.550 & 46.195 & -0.490 & -0.330 & 0.039 & 0.094 & 0.066 & 0.140 & 0.326 & 0.774 \\
+Topk7.5p0.1m*0.5lFlors20rSkisg1.0pFeTfDifrs28f & 128.547 & 52.176 & -0.940 & -0.380 & 0.331 & 0.508 & 0.709 & 2.077 & 0.217 & 0.583 \\
+Topk7.5p0.1m*0.5lFlors20rSkisg1.0pFeTfDifrs148f & \bfseries 129.692 & \bfseries 76.917 & -0.980 & -0.400 & 0.243 & 0.334 & 0.426 & 1.466 & 0.121 & 0.579 \\
+\bottomrule
+\end{tabular}

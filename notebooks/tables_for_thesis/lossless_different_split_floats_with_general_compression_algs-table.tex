@@ -1,0 +1,22 @@
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+\multicolumn{1}{p{2.5cm}}{Short Algorithm Name Differences} & \multicolumn{2}{p{1.8cm}}{Compression Ratio} & \multicolumn{2}{p{1.8cm}}{Compression Time} & \multicolumn{2}{p{1.8cm}}{Compression Time Max} & \multicolumn{2}{p{1.8cm}}{Decompression Time} & \multicolumn{2}{p{1.8cm}}{Decompression Time Max} \\
+ & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM \\
+\midrule
+BL-GeneralCompr & 1.000 & 1.000 & 0.017 & 0.024 & 0.039 & 0.043 & 0.014 & 0.024 & 0.032 & 0.043 \\
+SplbsBrowm10c & \bfseries 3.918 & 1.554 & 1.806 & 6.087 & 3.933 & 11.729 & 0.339 & 0.952 & 0.697 & 1.926 \\
+SplasBrowm10c & 3.912 & \bfseries 1.555 & 1.830 & 6.027 & 3.989 & 12.043 & 0.234 & 0.778 & 0.480 & 1.582 \\
+SplbsLzmwm & 3.896 & 1.535 & 0.633 & 1.995 & 1.538 & 4.453 & 0.545 & 1.283 & 1.142 & 2.989 \\
+SplasLzmwm & 3.885 & 1.532 & 0.629 & 1.986 & 1.533 & 4.254 & 0.446 & 1.205 & 0.961 & 2.733 \\
+SplbsZstwm1c & 3.702 & 1.508 & \bfseries 0.030 & \bfseries 0.048 & \bfseries 0.062 & \bfseries 0.089 & 0.258 & 0.475 & 0.524 & 0.942 \\
+SplbsZstwm15c & 3.680 & 1.504 & 0.224 & 0.658 & 0.481 & 1.333 & 0.257 & 0.713 & 0.518 & 1.465 \\
+SplasZstwm1c & 3.668 & 1.495 & 0.070 & 0.050 & 0.129 & 0.093 & 0.371 & \bfseries 0.299 & 0.729 & \bfseries 0.612 \\
+SplasZstwm15c & 3.646 & 1.497 & 0.225 & 0.649 & 0.600 & 1.402 & \bfseries 0.154 & 0.544 & \bfseries 0.326 & 1.103 \\
+SplbsBrowm1c & 3.609 & 1.494 & 0.033 & 0.099 & 0.066 & 0.161 & 0.339 & 0.861 & 0.674 & 1.763 \\
+SplasBrowm1c & 3.588 & 1.484 & 0.031 & 0.100 & 0.065 & 0.180 & 0.234 & 0.729 & 0.475 & 1.457 \\
+SplbsZliwm9c & 3.571 & 1.497 & 0.784 & 1.735 & 1.638 & 3.687 & 0.322 & 0.830 & 0.648 & 1.660 \\
+SplasZliwm9c & 3.550 & 1.490 & 0.781 & 1.659 & 1.596 & 3.465 & 0.216 & 0.679 & 0.435 & 1.380 \\
+SplbsBz2wm9c & 3.466 & 1.470 & 0.148 & 0.603 & 0.513 & 1.343 & 0.803 & 2.651 & 1.552 & 5.279 \\
+SplasBz2wm9c & 3.450 & 1.464 & 0.147 & 0.603 & 0.507 & 1.363 & 0.706 & 2.480 & 1.362 & 4.752 \\
+\bottomrule
+\end{tabular}

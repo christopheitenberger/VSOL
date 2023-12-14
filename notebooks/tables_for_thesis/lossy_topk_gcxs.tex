@@ -1,0 +1,18 @@
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+\multicolumn{1}{p{2.5cm}}{Short Algorithm Name Differences} & \multicolumn{2}{p{1.8cm}}{Compression Ratio} & \multicolumn{2}{p{1.8cm}}{Compression Time} & \multicolumn{2}{p{1.8cm}}{Compression Time Max} & \multicolumn{2}{p{1.8cm}}{Decompression Time} & \multicolumn{2}{p{1.8cm}}{Decompression Time Max} \\
+ & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM \\
+\midrule
+BL-LosslessCompr & 1.000 & 1.000 & 0.023 & 0.037 & 0.048 & 0.069 & 0.207 & 0.437 & 0.427 & 0.932 \\
+Topk15.0pGcxxsTsTcFsFd & 1.418 & 3.377 & 0.039 & 0.071 & 0.069 & 0.115 & 0.087 & 0.173 & 0.171 & 0.338 \\
+Topk15.0pSplbs & 1.326 & 2.664 & 0.040 & 0.249 & 0.063 & 0.320 & 0.211 & 1.092 & 0.453 & 2.230 \\
+Topk15.0pGcxxsTsFcFsFd & 1.326 & 3.085 & 0.052 & 0.106 & 0.081 & 0.143 & 0.190 & 0.376 & 0.436 & 0.818 \\
+Topk15.0pGcxxsFsTcFsFd & 1.288 & 3.020 & 0.040 & 0.078 & 0.075 & 0.103 & 0.098 & 0.205 & 0.208 & 1.071 \\
+Topk15.0pGcxxsFsFcFsFd & 1.204 & 2.806 & 0.053 & 0.114 & 0.095 & 0.146 & 0.186 & 0.360 & 0.373 & 0.770 \\
+Topk1.75pGcxxsTsTcFsFd & \bfseries 4.432 & \bfseries 11.241 & 0.028 & 0.050 & 0.060 & 0.099 & \bfseries 0.068 & \bfseries 0.123 & \bfseries 0.134 & \bfseries 0.235 \\
+Topk1.75pGcxxsTsFcFsFd & 4.279 & 10.844 & 0.029 & 0.054 & 0.053 & 0.090 & 0.096 & 0.166 & 0.186 & 0.348 \\
+Topk1.75pGcxxsFsTcFsFd & 4.144 & 10.456 & \bfseries 0.027 & \bfseries 0.049 & \bfseries 0.047 & \bfseries 0.076 & 0.069 & 0.129 & 0.138 & 0.263 \\
+Topk1.75pGcxxsFsFcFsFd & 4.031 & 10.054 & 0.028 & 0.054 & 0.053 & 0.095 & 0.094 & 0.174 & 0.209 & 0.335 \\
+Topk1.75pSplbs & 3.511 & 8.562 & 0.031 & 0.213 & 0.064 & 0.282 & 0.198 & 1.041 & 0.490 & 2.107 \\
+\bottomrule
+\end{tabular}

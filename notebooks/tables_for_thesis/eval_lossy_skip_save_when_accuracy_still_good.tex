@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+\multicolumn{1}{p{2.5cm}}{Short Algorithm Name Differences} & \multicolumn{2}{p{1.8cm}}{Compression Ratio} & \multicolumn{2}{p{1.8cm}}{Mean Diff to Lossless Last Accuracy} & \multicolumn{2}{p{1.8cm}}{Compression Time} & \multicolumn{2}{p{1.8cm}}{Compression Time Max} & \multicolumn{2}{p{1.8cm}}{Decompression Time} & \multicolumn{2}{p{1.8cm}}{Decompression Time Max} \\
+ & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM \\
+\midrule
+BL-LosslessCompr & 1.000 & 1.000 & 0.000 & \bfseries 0.000 & 0.030 & 0.037 & 0.063 & 0.079 & 0.262 & 0.434 & 0.530 & 0.875 \\
+Skisg0pFeTf & 1.508 & 1.136 & \bfseries 0.220 & \bfseries 0.000 & 0.180 & \bfseries 0.224 & 0.284 & \bfseries 1.362 & \bfseries 0.327 & \bfseries 0.488 & \bfseries 0.779 & \bfseries 1.075 \\
+Skisg0pTeTf & 1.524 & 1.158 & 0.200 & \bfseries 0.000 & \bfseries 0.172 & 0.234 & 0.263 & 1.364 & 0.334 & 0.505 & 0.835 & 1.109 \\
+Skisg1.0pTeTf & 1.629 & \bfseries 2.778 & 0.210 & -0.150 & 0.173 & 0.242 & \bfseries 0.259 & 1.406 & 0.340 & 0.588 & 0.866 & 1.443 \\
+Skisg1.0pFeTf & \bfseries 4.383 & 2.013 & -0.010 & -0.050 & 0.323 & 0.273 & 0.771 & 1.392 & 0.438 & 0.637 & 0.819 & 1.496 \\
+\bottomrule
+\end{tabular}

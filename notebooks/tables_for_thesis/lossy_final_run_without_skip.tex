@@ -1,0 +1,18 @@
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+\multicolumn{1}{p{2.5cm}}{Short Algorithm Name Differences} & \multicolumn{2}{p{1.7cm}}{Compression Ratio} & \multicolumn{2}{p{1.7cm}}{Mean Diff to Lossless Last Accuracy} & \multicolumn{2}{p{1.7cm}}{Compression Time} & \multicolumn{2}{p{1.7cm}}{Compression Time Max} & \multicolumn{2}{p{1.7cm}}{Decompression Time} \\
+ & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM \\
+\midrule
+BL-LosslessCompr & 1.000 & 1.000 & 0.000 & 0.000 & 0.030 & 0.037 & 0.063 & 0.079 & 0.262 & 0.434 \\
+Topk7.5p0.1m*0.5lFlors18r32r & 5.685 & 11.515 & \bfseries 0.070 & -0.080 & 0.037 & 0.098 & 0.067 & 0.131 & 0.068 & 0.177 \\
+Topk7.5p0.1m*0.5l & 3.727 & 6.838 & 0.020 & -0.010 & 0.035 & 0.106 & 0.059 & 0.151 & 0.090 & 0.285 \\
+Flors20r32rSplbs & 4.667 & 8.310 & 0.020 & \bfseries 0.020 & 0.046 & \bfseries 0.048 & 0.085 & \bfseries 0.085 & 0.255 & 0.392 \\
+Topk7.5p0.1mTlFlors18r32r & 5.864 & 11.928 & 0.000 & -0.080 & 0.036 & 0.098 & \bfseries 0.059 & 0.135 & 0.068 & 0.176 \\
+Topk7.5p0.1mTl & 4.197 & 7.481 & -0.050 & -0.030 & \bfseries 0.032 & 0.099 & 0.062 & 0.157 & 0.086 & 0.269 \\
+Topk5.0p0.1m2lFlors18r32r & 6.421 & 14.031 & -0.300 & -0.400 & 0.035 & 0.090 & 0.062 & 0.137 & \bfseries 0.067 & \bfseries 0.172 \\
+Topk7.5p0.1m*0.5lFlors20r32r & 6.669 & 14.384 & -0.360 & -0.240 & 0.060 & 0.254 & 0.092 & 0.310 & 0.112 & 0.492 \\
+Topk5.0p0.1m2l & 5.451 & 10.761 & -0.380 & -0.350 & 0.033 & 0.095 & 0.064 & 0.134 & 0.089 & 0.272 \\
+Topk7.5p0.1mTlFlors20r32r & 6.745 & 14.568 & -0.520 & -0.270 & 0.065 & 0.263 & 0.097 & 0.361 & 0.117 & 0.482 \\
+Topk5.0p0.1m2lFlors20r32r & \bfseries 6.935 & \bfseries 15.422 & -1.050 & -0.720 & 0.058 & 0.259 & 0.088 & 0.331 & 0.106 & 0.494 \\
+\bottomrule
+\end{tabular}

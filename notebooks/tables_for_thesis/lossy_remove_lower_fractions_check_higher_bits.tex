@@ -1,0 +1,16 @@
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+\multicolumn{1}{p{2.5cm}}{Short Algorithm Name Differences} & \multicolumn{2}{p{1.8cm}}{Compression Ratio} & \multicolumn{2}{p{1.8cm}}{Mean Diff to Lossless Last Accuracy} & \multicolumn{2}{p{1.8cm}}{Compression Time} & \multicolumn{2}{p{1.8cm}}{Compression Time Max} & \multicolumn{2}{p{1.8cm}}{Decompression Time} & \multicolumn{2}{p{1.8cm}}{Decompression Time Max} \\
+ & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM & Conv & LSTM \\
+\midrule
+BL-LosslessCompr & 1.000 & 1.000 & 0.000 & 0.000 & 0.025 & 0.037 & 0.059 & 0.081 & 0.222 & 0.434 & 0.440 & 0.886 \\
+Remht15s8b & 1.222 & 1.559 & \bfseries 0.050 & -0.010 & 0.043 & 0.135 & 0.067 & 0.198 & 0.127 & 0.375 & 0.262 & 0.765 \\
+Remht19s8b & 1.545 & 1.622 & 0.040 & \bfseries 0.010 & 0.041 & 0.089 & 0.073 & 0.277 & 0.118 & \bfseries 0.241 & 0.313 & 0.587 \\
+Remht23s8b & 1.589 & 1.630 & 0.010 & -0.010 & 0.043 & 0.108 & 0.082 & 0.159 & 0.120 & 0.333 & 0.278 & 0.725 \\
+Remht11s8b & 1.161 & 1.404 & 0.000 & -0.010 & \bfseries 0.039 & 0.084 & 0.151 & 0.126 & 0.124 & 0.262 & 0.331 & 0.927 \\
+Remht11s16b & 2.641 & 3.312 & 0.030 & 0.000 & 0.042 & 0.085 & 0.083 & 0.125 & 0.106 & 0.249 & \bfseries 0.217 & \bfseries 0.508 \\
+Remht23s16b & \bfseries 3.261 & \bfseries 4.376 & 0.020 & -0.010 & 0.042 & 0.112 & 0.133 & 0.161 & \bfseries 0.105 & 0.298 & 0.282 & 0.595 \\
+Remht3s16b & 1.035 & 1.029 & 0.010 & -0.010 & 0.039 & \bfseries 0.073 & 0.077 & \bfseries 0.124 & 0.127 & 0.297 & 0.333 & 0.688 \\
+Remht7s16b & 1.190 & 1.361 & 0.000 & 0.000 & 0.041 & 0.137 & \bfseries 0.064 & 0.198 & 0.127 & 0.403 & 0.260 & 0.817 \\
+\bottomrule
+\end{tabular}
