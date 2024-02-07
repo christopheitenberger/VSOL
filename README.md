@@ -3,9 +3,10 @@
 ## Description
 
 This repository contains the code of the master thesis titled
-'Versioning of Model State Evolution of Machine Learning Models in Online Learning Settings',
+['Versioning of Model State Evolution of Machine Learning Models in Online Learning Settings'](https://doi.org/10.34726/hss.2024.108900),
 which was written at Vienna University of Technology.
-A link to the master thesis will be provided when available.
+
+Eitenberger, C. (2024). Versioning of Model State Evolution of Machine Learning Models in Online Learning Settings [Diploma Thesis, Technische Universität Wien]. reposiTUm. https://doi.org/10.34726/hss.2024.108900
 
 VSOL stores neural network weights in an online learning setting.
 Restoring previously used versions may be necessary to understand previous decisions of the neural network.
